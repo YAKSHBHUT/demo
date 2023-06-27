@@ -143,16 +143,83 @@
         bottom: 40px;
         right: 40px;
         background-color: #25d366;
-        color: #FFF;
+        /* box-shadow: 10px 20px 10px green; */
         border-radius: 50px;
         text-align: center;
         font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
+        box-shadow: 5px 5px 5px #3cb972;
         z-index: 100;
     }
     
     .my-float {
         margin-top: 16px;
+    }
+    
+    .call-buton .cc-calto-action-ripple {
+        z-index: 99999;
+        position: fixed;
+        right: 2.2rem;
+        bottom: 8rem;
+        background: #ec8b00;
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        border-radius: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #ffffff;
+        -webkit-animation: cc-calto-action-ripple 0.6s linear infinite;
+        animation: cc-calto-action-ripple 0.6s linear infinite;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .call-buton .cc-calto-action-ripple i {
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        font-size: 2.2rem;
+    }
+    
+    .call-buton .cc-calto-action-ripple:hover i {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    
+    @-webkit-keyframes cc-calto-action-ripple {
+        0% {
+            -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+        }
+        100% {
+            -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+            box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+        }
+    }
+    
+    @keyframes cc-calto-action-ripple {
+        0% {
+            -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+        }
+        100% {
+            -webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+            box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+        }
+    }
+    
+    span.num {
+        position: absolute;
+        color: #ec8b00;
+        left: -30%;
+        bottom: -50%;
     }
 </style>
 
@@ -225,7 +292,7 @@
     <hr style="border: 5px solid gray;border-radius: 10px;">
     <section id="properties">
         <div class="container">
-            <h2 style="color: aliceblue;">ABOUT US</h2>
+            <h2 style="color: aliceblue; font-size:40px;">ABOUT US</h2>
             <div class="row topmargin-sm">
                 <div class="col-md-6">
                     <p style="color: aliceblue;font-weight: 500;font-size: 20px;">RATNESHWAR DEVELOPERS IS THE BRAND KNOWN FOR CONSISTENT SUSTAINABILITY TRENDS THAT ARE THE MOST CRITICAL FOR THE REAL-ESTATE SEGMENT IN CURRENT TIMES.WE RELY ON OUR PEOPLE, THEIR CAPACITIES TO INNOVATE AND USE OF TECHNOLOGY TO CREATE
@@ -256,14 +323,18 @@
     <hr style="border: 5px solid gray;border-radius: 10px;">
     <section id="blog">
         <div class="container">
-            <h2 style="color: aliceblue;margin-left: 3rem;" class="block-title">Floor plans</h2>
+            <h2 style="color: aliceblue;margin-left: 0rem; font-size:40px;" class="block-title">FLOOR PLANS</h2>
             <br><br>
-            <div class=" container-prop ">
-                <div class="wrapper-prop ">
+            <div class=" container-prop2 ">
+                <div class="wrapper-prop2 ">
                     <img src="assets/images/GROUND.jpg ">
+                    <br><br><br>
                     <img src="assets/images/1ST.jpg">
+                    <br><br><br>
                     <img src="assets/images/2ND.jpg">
+                    <br><br><br>
                     <img src="assets/images/3RD.jpg ">
+                    <br><br><br>
                     <img src="assets/images/4_6.jpg ">
                 </div>
             </div>
@@ -273,37 +344,49 @@
     <hr style="border: 5px solid gray;border-radius: 10px">
     <section id="blog">
         <div class="container">
-            <h2 style="color: aliceblue;margin-left: 0rem;" class="block-title">CONFIGURATIONS</h2>
+            <h2 style="color: aliceblue;margin-left: 0rem;font-size:40px;" class="block-title">CONFIGURATIONS</h2>
             <br><br>
-            <div class=" container-prop ">
-                <div class="wrapper-prop ">
+            <div class=" container-prop2 ">
+                <div class="wrapper-prop2 ">
                     <img src="assets/images/3d_1bhk.png ">
+                    <br><br><br>
                     <img src="assets/images/3d_2bhk.png">
+                    <br><br><br>
+                    <img src="assets/images/FEATURES.jpg">
                 </div>
             </div>
         </div>
 
     </section>
 
-    <hr id="map" style="border: 5px solid gray;border-radius: 10px;margin-left: 10px ;margin-right: 10px;">
+    <hr id="map" style="border: 5px solid gray;border-radius: 10px;">
     <section id="footer " style="margin-top: 0rem;background-color: rgb(1 77 39);border-top-right-radius: 30px;border-bottom-right-radius: 30px;box-shadow: 10px 10px 10px rgb(3, 46, 3);width: 25rem;" class="footer ">
+
         <div class="container " style="margin-top: 0rem;margin-left: 2rem; ">
+            <address>
+                <br>
+                        <strong
+                            style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: larger;">MAHARERA REG. NO.</strong>
+                        <h3>P52000021393</h3>
+                        <br>
+                    </address>
             <div>
                 <!-- Google Map Copied Code -->
                 <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.2621088877218!2d73.15973557515424!3d18.87544978228829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e1837e5122dd%3A0x565c8a9554d15071!2sRatneshwar%20Happy%20homes!5e0!3m2!1sen!2sin!4v1687863055171!5m2!1sen!2sin "
                     width="300 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " title="Navigation to contact us " referrerpolicy="no-referrer-when-downgrade "></iframe>
             </div>
             <address>
+                <br>
                         <strong
                             style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: larger;">Site
-                            Address</strong>
+                            Address:</strong>
                         <p>Happy Homes, Survey No. 90/1A, and 91, At. Karade
                             Khurd, Rasayani, Panvel 410207</p>
                     </address>
             <address>
                         <strong
                             style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: larger;">Office
-                            Address</strong>
+                            Address:</strong>
                         <p>Emperia Group Office No. 1, Laxmi Aashirwad, Plot
                             No. 23, Sec-25, Kamothe, Navi Mumbai 410209</p>
                     </address>
@@ -324,9 +407,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=+918080639999&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=8080639999&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
+    <section class="call-buton"><a class="cc-calto-action-ripple" href="tel:+918080639999"><i class="fa fa-phone"></i><span
+                        class="num"></span>
+                </a>
+    </section>
 </body>
 
 </html>
