@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="" />
+    <meta name="description" content="">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700" rel="stylesheet">
+
+    <!-- Ionic Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <title>RATNESHWAR DEVELOPERS</title>
+</head>
+<style>
+    /* * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    } */
+    
+    .container-prop {
+        width: 85vmin;
+        /* position: absolute; */
+        /* transform: translate(-50%, -50%); */
+        /* top: 50%; */
+        /* left: 50%; */
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        /* border-radius: 8px; */
+        margin-left: 1rem;
+        box-shadow: 10px 25px 30px rgb(29, 28, 28);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .container-prop {
+            /* border: 10px solid #e16161; */
+            width: 120vmin;
+            margin-left: 6rem;
+        }
+    }
+    
+    .wrapper-prop {
+        width: 100%;
+        display: flex;
+        animation: slide 7s infinite;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(0);
+        }
+        30% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        55% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-200%);
+        }
+        80% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .fixedButton {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        padding: 10px;
+    }
+    
+    .roundedFixedBtn {
+        height: 40px;
+        line-height: 40px;
+        width: 20rem;
+        font-size: 2.5em;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: rgb(1, 77, 39, 0.5);
+        color: rgb(218, 216, 216);
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .fixedButton {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding: 0px;
+        }
+        .roundedFixedBtn {
+            height: 60px;
+            line-height: 80px;
+            width: 50rem;
+            font-size: 2em;
+            font-weight: bold;
+            /* border-radius: 50%; */
+            background-color: #33cd33;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            cursor: pointer;
+        }
+        /* .map {
+            width: 20;
+            border-radius: 50%;
+            margin-left: -10rem;
+        } */
+    }
+</style>
+
+
+<body style="background-color: rgba(1, 77, 39, 0.5);color: aliceblue;">
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(1 77 39);border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;box-shadow: 10px 10px 10px rgb(3, 46, 3);">
+        <a href="#hero"><img src="assets/images/LOGO - Copy.jpeg" style="height: 6rem;border-radius: 20px;margin-left: 5rem;" class="img-fluid navbar-brand header-logo" alt="Real Estate Logo | Themes Bootstrap"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icon ion-md-menu"></i>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="color: aliceblue;" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: aliceblue;" class="nav-link" href="#properties">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: aliceblue;" class="nav-link" href="#footer">Contact us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End collapse -->
+    </nav>
+    <!-- End navbar -->
+
+    <section id="hero" style="margin-top: 7rem;">
+        <div class="container-fluid">
+            <div class="hero-container-desktop">
+                <div class="hero-details">
+                    <h1 style="color: rgb(255, 255, 255);font-weight: 900;margin-left: 3rem;margin-top: -8rem;">Luxurious Homes in the heart of Rasanyani, Panvel .</h1>
+                    <h1 style="font-weight: 900;margin-left: 3rem;margin-bottom: 10rem;">Smart residences starting from ₹ 17 Lacs*.</h1>
+
+                </div>
+                <img src="assets/images/slide-1.jpg" style="height: 50rem;margin-left: 3rem;" class="img-fluid desktop-hero" alt="https://unsplash.com/photos/B0aCvAVSX8E">
+            </div>
+            <!-- End hero container desktop -->
+        </div>
+        <!-- End container fluid -->
+
+        <div class="container-fluid">
+            <img src="assets/images/slide-1.jpg" style="border-radius: 20px;" class="img-fluid mobile-hero">
+        </div>
+        <!-- End container fluid -->
+        <div class="container topmargin-lg">
+            <div class="hero-container-mobile">
+                <div class="hero-details-mobile">
+                    <h3 style="font-weight: 900; ">Luxurious Homes in
+                        <h3 style="font-weight: 900; ">the heart of </h3>
+                        <h3 style="font-weight: 900; ">Rasayani,Panvel. </h3>
+                    </h3>
+
+                    <br>
+                    <h2 style="font-weight: 900;font-size: 30px; ">Smart residences
+                        <h2 style="font-weight: 900;font-size: 30px; ;"> starting from
+                            <h2 style="font-weight: 900;font-size: 39px;"> ₹ 17 Lacs* </h2>
+                        </h2>
+                    </h2>
+
+                </div>
+                <!-- End hero container mobile -->
+            </div>
+            <!-- End container -->
+    </section>
+    <!-- End hero -->
+
+    <section id="properties">
+        <div class="container">
+            <h2 style="color: aliceblue;">ABOUT US</h2>
+            <div class="row topmargin-sm">
+                <div class="col-md-6">
+                    <p style="color: aliceblue;font-weight: 500;font-size: 25px;">RATNESHWAR DEVELOPERS IS THE BRAND KNOWN FOR CONSISTENT SUSTAINABILITY TRENDS THAT ARE THE MOST CRITICAL FOR THE REAL-ESTATE SEGMENT IN CURRENT TIMES.WE RELY ON OUR PEOPLE, THEIR CAPACITIES TO INNOVATE AND USE OF TECHNOLOGY TO CREATE
+                        IMMENSE VALUE FOR ALL OUR STAKEHOLDERS. WE WILL CONTINUE TO RAISE THE BAR AND SET NEW STANDARDS IN THE INDUSTRY WE DEAL IN TO STRENGTHEN THIS GOAL OF OURS.</p>
+                </div>
+                <div class="col-md-6">
+                    <p style="color: aliceblue;font-weight: 500;font-size: 25px;">SINCE INCEPTION, WE HAVE STRIVED FOR BENCHMARK QUALITY, CUSTOMER CENTRIC APPROACH, ROBUST ENGINEERING, IN-HOUSE RESEARCH, UNCOMPROMISING BUSINESS ETHICS, TIMELESS VALUES AND TRANSPARENCY IN ALL SPHERES OF BUSINESS CONDUCT, MAKING RATNESHWAR
+                        DEVELOPERS A MOST PREFERRED BRAND. WE ARE ACUTELY CONSCIOUS OF THE FACT THAT DUE TO RAPID URBANIZATION, THERE ARE HUGE CHALLENGES AND AS RESPONSIBLE PLAYER WE SHALL CONTINUE TO PROVIDE INTELLIGENT SOLUTIONS IN A MANNER WHICH IS
+                        SUSTAINABLE.
+
+                    </p>
+                </div>
+            </div>
+            <br>
+            <h2 style="color: aliceblue;"></h2>
+            <div class="container-prop">
+                <div class="wrapper-prop">
+                    <img src="assets/images/slide-1.jpg">
+                    <img src="assets/images/slide-2.jpg">
+                    <img src="assets/images/slide-3.jpg">
+                    <img src="assets/images/slide-4.jpg">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End properties -->
+
+    <section id="blog">
+        <div class="container">
+            <h2 style="color: aliceblue;margin-left: 3rem;" class="block-title">Floor plans</h2>
+            <br><br>
+            <div class=" container-prop ">
+                <div class="wrapper-prop ">
+                    <img src="assets/images/GROUND.jpg ">
+                    <img src="assets/images/1ST.jpg">
+                    <img src="assets/images/2ND.jpg">
+                    <img src="assets/images/3RD.jpg ">
+                    <img src="assets/images/4_6.jpg ">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="footer ">
+        <div class="container ">
+
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- End footer-->
+
+    <section id="copyright " style="margin-top: -10rem;margin-left: 10rem;">
+        <div class="container ">
+            <div>
+                <!-- Google Map Copied Code -->
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.2292893297!2d73.1617213632372!3d18.876906568047104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e1837e5122dd%3A0x565c8a9554d15071!2sRatneshwar%20Happy%20homes!5e0!3m2!1sen!2sin!4v1687857835766!5m2!1sen!2sin"
+                    width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+    <a class="fixedButton" href="tel:9152099090">
+        <div class="roundedFixedBtn"><i class="fa fa-phone">+91 9152099090</i></div>
+        <div class="roundedFixedBtn"><i class="fa fa-phone">+91 9152099090</i></div>
+    </a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
